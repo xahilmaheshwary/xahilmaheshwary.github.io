@@ -498,7 +498,7 @@ margin-top:20px;
 <div>
 
 
-<div class="surprise" id="surprise">
+<div class="surprise" id="surprise" style="display:none;">
 
 <h2>
 💖 Surprise For You Komalii 💖
@@ -549,7 +549,11 @@ Happy Birthday once again meri jaan 🎂💕
 
 function showSurprise(){
 
-document.getElementById("surprise").style.display="block";
+let box = document.getElementById("surprise");
+
+box.style.display = "block";
+
+box.scrollIntoView({behavior:"smooth"});
 
 }
 
